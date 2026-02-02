@@ -1,0 +1,67 @@
+/*
+Theme Name: Mixes
+Theme URI: http://www.mixes.eu
+Template: catch-adaptive
+Author: Ramon van de Scheur
+Description: Catch Adaptive child
+Tags: two-columns,three-columns,one-column,right-sidebar,left-sidebar,fluid-layout,fixed-layout,responsive-layout,custom-header,custom-background,custom-menu,custom-colors,sticky-post,threaded-comments,translation-ready,featured-images,theme-options,light,white,dark,black,blue,brown,gray,green,orange,pink,purple,red,silver,tan,yellow
+Version: 1.0.1453143323
+Updated: 2016-01-18 20:55:23
+*/
+
+@charset "UTF-8";
+
+/* verberg theme creator link */
+#footer-right-content {display:none;}
+
+/* laat taal submenu automatische breedte hebben */
+.catchadaptive-nav-menu .sub-menu .sub_menu_item_wpglobus_menu_switch > a {width:auto;}
+
+/* Ook de ondertitel met schaduw en wat groter en in beter lettertype */
+.site-description {
+	text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+	font-family: Calibri;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* verberg site titel, want dat zit al in het logo */
+.site-title {display: none;}
+
+/* Grote kopjes wat beter lettertype  */
+h1.entry-title {
+	font-family: Calibri;
+	font-size: 35px;
+}
+
+/* lijsten wat meer marge tussen de items */
+.entry-content ul > li {
+	margin: 11px 0;
+}
+
+/* site lekker breed, meegroeiend met scherm */
+.no-sidebar.content-width #main {
+	width: 100%;
+}
+
+/* altijd talen tonen in zijmenu */
+#header-left-nav .menu-item-9999999999 > a {
+	margin-top: 5px;
+}
+#header-left-nav .menu_item_wpglobus_menu_switch .sub-menu {
+	display: block !important;
+	margin-top: 10px;
+}
+#header-left-nav .menu_item_wpglobus_menu_switch .sub-menu a {
+	padding-left: 15px;
+}
+
+/* wat meer ruimte boven subheaders (iig h3) */
+h3 {
+	margin-top:30px;
+}
+
+/* mooie lijsten */
+.entry-content ul > li {
+	list-style-type: disc;
+}
